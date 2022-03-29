@@ -39,282 +39,6 @@
 >   + 用户id可以确定角色集合
 >   + 角色可以确定访问的菜单集合
 
-### 建表语句
-
-```sql
--- ----------------------------
--- Table structure for tb_article 文章表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_article`;
-CREATE TABLE `tb_article`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL COMMENT '作者',
-  `category_id` int(11) DEFAULT NULL COMMENT '文章分类',
-  `article_cover` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '文章缩略图',
-  `article_title` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '标题',
-  `article_content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '内容',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '发表时间',
-  `update_time` datetime(0) DEFAULT NULL COMMENT '更新时间',
-  `is_top` tinyint(1) DEFAULT NULL COMMENT '是否置顶 0否 1是',
-  `is_draft` tinyint(1) DEFAULT 0 COMMENT '是否为草稿 0否 1是',
-  `is_delete` tinyint(1) DEFAULT 0 COMMENT '是否删除  0否 1是',
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `category_id`(`category_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 39 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_category 分类表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_category`;
-CREATE TABLE `tb_category`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `category_name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '分类名',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_tag 标签表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_tag`;
-CREATE TABLE `tb_tag`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `tag_name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '标签名',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_article_tag 文章标签关系表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_article_tag`;
-CREATE TABLE `tb_article_tag`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `article_id` int(11) NOT NULL COMMENT '文章id',
-  `tag_id` int(11) NOT NULL COMMENT '标签id',
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `fk_article_tag_1`(`article_id`) USING BTREE,
-  INDEX `fk_article_tag_2`(`tag_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 280 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_friend_link 友链表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_friend_link`;
-CREATE TABLE `tb_friend_link`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `link_name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '链接名',
-  `link_avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '链接头像',
-  `link_address` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '链接地址',
-  `link_intro` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '链接介绍',
-  `create_time` datetime(0) NOT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `fk_friend_link_user`(`link_name`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_message 留言表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_message`;
-CREATE TABLE `tb_message`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',
-  `ip_address` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '用户ip',
-  `ip_source` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '用户地址',
-  `nickname` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '昵称',
-  `avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '头像',
-  `message_content` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '留言内容',
-  `time` tinyint(1) DEFAULT NULL COMMENT '弹幕速度',
-  `create_time` datetime(0) NOT NULL COMMENT '发布时间',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3435 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_comment 评论表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_comment`;
-CREATE TABLE `tb_comment`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL COMMENT '评论用户Id',
-  `article_id` int(11) DEFAULT NULL COMMENT '评论文章id',
-  `comment_content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '评论内容',
-  `create_time` datetime(0) NOT NULL COMMENT '评论时间',
-  `reply_id` int(11) DEFAULT NULL COMMENT '回复用户id',
-  `parent_id` int(11) DEFAULT NULL COMMENT '父评论id',
-  `is_delete` tinyint(4) DEFAULT 0 COMMENT '是否删除  0否 1是',
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `fk_comment_user`(`user_id`) USING BTREE,
-  INDEX `fk_comment_article`(`article_id`) USING BTREE,
-  INDEX `fk_comment_parent`(`parent_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 268 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_operation_log 操作日志表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_operation_log`;
-CREATE TABLE `tb_operation_log`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',
-  `opt_module` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作模块',
-  `opt_type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作类型',
-  `opt_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作url',
-  `opt_method` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作方法',
-  `opt_desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作描述',
-  `request_param` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '请求参数',
-  `request_method` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '请求方式',
-  `response_data` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '返回数据',
-  `user_id` int(11) DEFAULT NULL COMMENT '用户id',
-  `nickname` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户昵称',
-  `ip_addr` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作ip',
-  `ip_source` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '操作地址',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_menu 菜单表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_menu`;
-CREATE TABLE `tb_menu`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '菜单名',
-  `path` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '菜单路径',
-  `component` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '组件',
-  `icon` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '菜单icon',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
-  `update_time` datetime(0) DEFAULT NULL COMMENT '更新时间',
-  `order_num` tinyint(4) DEFAULT NULL COMMENT '排序',
-  `parent_id` int(11) DEFAULT NULL COMMENT '父id',
-  `is_disable` tinyint(1) DEFAULT NULL COMMENT '是否禁用 0否1是',
-  `is_hidden` tinyint(1) DEFAULT NULL COMMENT '是否隐藏  0否1是',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 203 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_resource 权限表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_resource`;
-CREATE TABLE `tb_resource`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `resource_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '资源名',
-  `url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '权限路径',
-  `request_method` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '请求方式',
-  `parent_id` int(11) DEFAULT NULL COMMENT '父权限id',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
-  `update_time` datetime(0) DEFAULT NULL COMMENT '修改时间',
-  `is_disable` tinyint(1) DEFAULT NULL COMMENT '是否禁用 0否 1是',
-  `is_anonymous` tinyint(4) DEFAULT NULL COMMENT '是否匿名访问 0否 1是',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 250 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_role 角色表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_role`;
-CREATE TABLE `tb_role`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',
-  `role_name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '角色名',
-  `role_label` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '角色描述',
-  `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
-  `update_time` datetime(0) DEFAULT NULL COMMENT '更新时间',
-  `is_disable` tinyint(1) DEFAULT NULL COMMENT '是否禁用  0否 1是',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_role_menu 角色菜单关系表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_role_menu`;
-CREATE TABLE `tb_role_menu`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `role_id` int(11) DEFAULT NULL COMMENT '角色id',
-  `menu_id` int(11) DEFAULT NULL COMMENT '菜单id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1265 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_role_resource 角色权限关系表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_role_resource`;
-CREATE TABLE `tb_role_resource`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `role_id` int(11) DEFAULT NULL COMMENT '角色id',
-  `resource_id` int(11) DEFAULT NULL COMMENT '权限id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4181 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_user_auth 用户登录信息表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_user_auth`;
-CREATE TABLE `tb_user_auth`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_info_id` int(11) NOT NULL COMMENT '用户信息id',
-  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '用户名',
-  `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '密码',
-  `login_type` tinyint(1) NOT NULL COMMENT '登录类型',
-  `ip_addr` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户登录ip',
-  `ip_source` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'ip来源',
-  `create_time` datetime(0) NOT NULL COMMENT '创建时间',
-  `last_login_time` datetime(0) DEFAULT NULL COMMENT '上次登录时间',
-  PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `username`(`username`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 201 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_user_info 用户个人信息表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_user_info`;
-CREATE TABLE `tb_user_info`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
-  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '邮箱号',
-  `nickname` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '用户昵称',
-  `avatar` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT '用户头像',
-  `intro` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户简介',
-  `web_site` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '个人网站',
-  `create_time` datetime(0) NOT NULL COMMENT '创建时间',
-  `update_time` datetime(0) DEFAULT NULL COMMENT '更新时间',
-  `is_disable` tinyint(1) DEFAULT 0 COMMENT '是否禁用',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 212 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_user_role 用户角色关系表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_user_role`;
-CREATE TABLE `tb_user_role`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) DEFAULT NULL COMMENT '用户id',
-  `role_id` int(11) DEFAULT NULL COMMENT '角色id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 221 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-
-
--- ----------------------------
--- Table structure for tb_unique_view 网站单日访问量表
--- ----------------------------
-DROP TABLE IF EXISTS `tb_unique_view`;
-CREATE TABLE `tb_unique_view`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `create_time` datetime(0) NOT NULL COMMENT '时间',
-  `views_count` int(11) NOT NULL COMMENT '访问量',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 225 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
-```
-
 ## 博客整体概览
 
 ### 包结构
@@ -393,7 +117,7 @@ public class OptTypeConst {
 }
 ```
 
-**日志切面类 handler.OptLogAspect **
+**日志切面类 handler.OptLogAspect**
 
 ```java
 /**
@@ -474,7 +198,7 @@ public class OptLogAspect {
 
 #### 异常处理
 
-**自定义异常类 exception.ServeException **
+**自定义异常类 exception.ServeException**
 
 ```java
 /**
@@ -488,7 +212,7 @@ public class ServeException extends RuntimeException {
 
 ```
 
-**返回状态码常量 constant.StatusConst ** 
+**返回状态码常量 constant.StatusConst** 
 
 ```java
 package top.bravecoder.blog.constant;
@@ -674,7 +398,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-**用户登录信息，UserDetails 的实现类 UserInfoDTO **
+**用户登录信息，UserDetails 的实现类 UserInfoDTO**
 
 ```java
 /*
