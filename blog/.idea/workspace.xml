@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5522c0d0-3c85-48c5-bf82-f540a8f6b837" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/target/blog-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-0.0.1.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/BlogApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/annotation/OptLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/RabbitConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/WebSecurityConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/constant/CommonConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/constant/MQPrefixConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/constant/OptTypeConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/constant/RedisPrefixConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/constant/StatusConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/ArticleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/BlogInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/ControllerAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/FriendLinkController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/LogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/MenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/MessageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/ResourceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/TagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/UserAuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/controller/UserInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/ArticleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/ArticleTagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/CategoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/CommentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/FriendLinkDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/MenuDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/OperationLogDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/ResourceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/RoleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/RoleMenuDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/RoleResourceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/TagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/UniqueViewDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/UserAuthDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/UserInfoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dao/UserRoleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArchiveDTO$ArchiveDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArchiveDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleBackDTO$ArticleBackDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleBackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleDTO$ArticleDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleHomeDTO$ArticleHomeDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleHomeDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleOptionDTO$ArticleOptionDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleOptionDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticlePaginationDTO$ArticlePaginationDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticlePaginationDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticlePreviewDTO$ArticlePreviewDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticlePreviewDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticlePreviewListDTO$ArticlePreviewListDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticlePreviewListDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleRankDTO$ArticleRankDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleRankDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleRecommendDTO$ArticleRecommendDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleRecommendDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleSearchDTO$ArticleSearchDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ArticleSearchDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/BlogBackInfoDTO$BlogBackInfoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/BlogBackInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/BlogHomeInfoDTO$BlogHomeInfoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/BlogHomeInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CategoryBackDTO$CategoryBackDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CategoryBackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CategoryDTO$CategoryDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CategoryDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CommentBackDTO$CommentBackDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CommentBackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CommentDTO$CommentDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/CommentDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/EmailDTO$EmailDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/EmailDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/FriendLinkBackDTO$FriendLinkBackDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/FriendLinkBackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/FriendLinkDTO$FriendLinkDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/FriendLinkDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/LabelOptionDTO$LabelOptionDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/LabelOptionDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/MenuDTO$MenuDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/MenuDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/MessageBackDTO$MessageBackDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/MessageBackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/MessageDTO$MessageDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/MessageDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/OperationLogDTO$OperationLogDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/OperationLogDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/PageDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ReplyCountDTO$ReplyCountDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ReplyCountDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ReplyDTO$ReplyDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ReplyDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ResourceDTO$ResourceDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/ResourceDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/RoleDTO$RoleDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/RoleDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/TagDTO$TagDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/TagDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UniqueViewDTO$UniqueViewDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UniqueViewDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UrlRoleDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserBackDTO$UserBackDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserBackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserInfoDTO$UserInfoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserLoginDTO$UserLoginDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserLoginDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserMenuDTO$UserMenuDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserMenuDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserOnlineDTO$UserOnlineDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserOnlineDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserRoleDTO$UserRoleDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/dto/UserRoleDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Article$ArticleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/ArticleTag$ArticleTagBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/ArticleTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Category$CategoryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Comment$CommentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/FriendLink$FriendLinkBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/FriendLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Menu$MenuBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Message$MessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/OperationLog$OperationLogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/OperationLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Resource$ResourceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Role$RoleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/RoleMenu$RoleMenuBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/RoleMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/RoleResource$RoleResourceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/RoleResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Tag$TagBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UniqueView$UniqueViewBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UniqueView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UserAuth$UserAuthBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UserAuth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UserInfo$UserInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UserRole$UserRoleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/entity/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/enums/FilePathEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/enums/LoginTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/enums/RoleEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/exception/ServeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/AccessDecisionManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/AccessDeniedHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/AuthenticationEntryPointImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/AuthenticationFailHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/AuthenticationSuccessHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/EmailReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/FilterInvocationSecurityMetadataSourceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/LogoutSuccessHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/OptLogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/handler/ServletRequestListenerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/ArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/ArticleTagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/BlogInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/FriendLinkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/MenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/MessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/OperationLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/ResourceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/RoleMenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/RoleResourceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/TagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/UniqueViewService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/UserAuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/UserInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/UserRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/ArticleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/ArticleTagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/BlogInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/CommentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/FriendLinkServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/MenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/MessageServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/OperationLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/ResourceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/RoleMenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/RoleResourceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/TagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/UniqueViewServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/UserAuthServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/UserInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/service/impl/UserRoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/BeanCopyUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/CommonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/HTMLUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/IpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/OSSUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/util/UserUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/ArticleVO$ArticleVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/ArticleVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/CategoryVO$CategoryVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/CategoryVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/CommentVO$CommentVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/CommentVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/ConditionVO$ConditionVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/ConditionVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/DeleteVO$DeleteVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/DeleteVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/EmailVO$EmailVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/EmailVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/FriendLinkVO$FriendLinkVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/FriendLinkVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/MenuVO$MenuVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/MenuVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/MessageVO$MessageVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/MessageVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/PasswordVO$PasswordVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/PasswordVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/ResourceVO$ResourceVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/ResourceVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/RoleVO$RoleVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/RoleVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/TagVO$TagVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/TagVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/UserInfoVO$UserInfoVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/UserInfoVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/UserRoleVO$UserRoleVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/UserRoleVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/UserVO$UserVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/UserVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/VoiceVO$VoiceVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fit/xiaozhang/blog/vo/VoiceVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ArticleDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommentDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/MenuDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ResourceDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RoleDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UniqueViewDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserAuthDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserRoleDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1656">
+              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@ApiModelProperty</find>
+      <find>ApiImplicitParam</find>
+      <find>ApiImplicitParams</find>
+      <find>login</find>
+      <find>passwordEncoder</find>
+      <find>filter</find>
+      <find>BLOG_VIEWS_COUNT</find>
+      <find>admin/about</find>
+      <find>listRoles</find>
+      <find>listArticleRecommends</find>
+      <find>xiaojie</find>
+      <find>11921</find>
+      <find>yezhiqiu</find>
+      <find>since</find>
+      <find>AccessDecisionManagerImpl</find>
+      <find>HttpSessionEventPublisher</find>
+      <find>httpSessionEventPublisher</find>
+      <find>accessDeniedHandler</find>
+      <find>authenticationEntryPoint</find>
+      <find>saveComment</find>
+      <find>listComments</find>
+      <find>listReplies</find>
+      <find>listUrlRoles</find>
+      <find>listArticleBacks</find>
+      <find>listCommentBackDTO</find>
+      <find>listMenusByUserInfoId</find>
+      <find>User</find>
+      <find>UserDetailsService</find>
+      <find>session</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>zhangzhi</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\JavaStudy\blog_study\Blog-master\blog\src\main\java\top\bravecoder\blog\service\impl</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/controller/UserAuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/utils/WebSocketUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/annotation/OptLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/enums/OptLogTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/exception/ServeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/dto/UrlRoleDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/UniqueViewServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/ServletRequestListenerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/config/RabbitConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/UserAuthServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/enums/LoginTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/util/MarkdownUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/util/MarkdownUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/dto/ArticleDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/CommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/BlogApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/OptLogAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/controller/ControllerAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/RoleDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/EmailReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/dto/UserMenuDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/entity/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/enums/StatusCodeEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/vo/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/vo/MenuVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/AuthenticationEntryPointImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/AccessDeniedHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/AccessDecisionManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/AuthenticationFailHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/handler/FilterInvocationSecurityMetadataSourceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/controller/BlogInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/service/impl/BlogInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/constant/CommonConst.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/bravecoder/blog/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaozhang/bravecoder/blog/handler/AuthenticationFailHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fit/bravecoder/blog/handler/AuthenticationFailHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/AuthenticationFailHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/constant/MQPrefixConst.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\tools\maven\localWarehouse" />
+        <option name="mavenHome" value="D:/tools/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\tools\maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-30" />
+    <option name="y" value="10" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.3.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.3.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.3.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.bravecoder.blog.vo" />
+      <recent name="top.bravecoder.blog.enums" />
+      <recent name="top.bravecoder.blog.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaStudy\blog_study\Blog-master\blog\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fit.xiaozhang.blog.Test" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.xiaozhang.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.xiaozhang.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fit.xiaozhang.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Spring Boot.BlogApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\zhang\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.30294907" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30351907" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.34846267" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49932975" weight="0.4875549" />
+      <window_info anchor="bottom" id="GenProtobuf" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.045387994" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.6954612" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.33821377" />
+      <window_info anchor="bottom" id="Duplicates" order="16" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.09517426" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.043923866" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.34846267" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49932975" weight="0.4875549" />
+      <window_info anchor="bottom" id="GenProtobuf" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.045387994" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.6954612" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.33821377" />
+      <window_info anchor="bottom" id="Duplicates" order="16" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>item.getAttribute()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.2/spring-security-core-5.4.2-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/util/UserUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/service/impl/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/AccessDeniedHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/FilterInvocationSecurityMetadataSourceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="89" column="44" lean-forward="true" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2889#2890#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.2/spring-security-core-5.4.2-sources.jar!/org/springframework/security/core/context/SecurityContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+          <folding>
+            <element signature="e#3979#3980#0" expanded="true" />
+            <element signature="e#4014#4015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/service/impl/BlogInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="64" column="15" lean-forward="true" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/dto/UserInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="121" column="20" lean-forward="true" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/BlogInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/service/impl/CommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="131" column="69" selection-start-line="131" selection-start-column="69" selection-end-line="131" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/constant/CommonConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/annotation/OptLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/dto/BlogBackInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4632">
+          <caret line="224" column="42" selection-start-line="224" selection-start-column="42" selection-end-line="224" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.4.2/spring-data-redis-2.4.2-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26952">
+          <caret line="1227" column="51" selection-start-line="1227" selection-start-column="51" selection-end-line="1227" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/config/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/OptLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/AccessDecisionManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/AuthenticationSuccessHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/AuthenticationFailHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/util/OSSUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1069">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/util/BeanCopyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/util/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/dto/UserBackDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/dto/PageDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/dto/BlogHomeInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/dto/ArchiveDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/constant/OptTypeConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/constant/MQPrefixConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/handler/EmailReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/controller/UserAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/service/impl/UserAuthServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.3.2/spring-amqp-2.3.2.jar!/org/springframework/amqp/core/MessageProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.3.2/spring-rabbit-2.3.2.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10464">
+          <caret line="585" column="16" selection-start-line="585" selection-start-column="16" selection-end-line="585" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.3.2/spring-context-support-5.3.2-sources.jar!/org/springframework/mail/SimpleMailMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/constant/RedisPrefixConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fit/xiaozhang/blog/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-start.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>bootstrap</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>jdk 1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>blog</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>jdk 1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
